@@ -4,30 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/src/css/style.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="btnButton">
-        <button onclick="ConfirmFunction()">Change BodyColor</button>
+<body >
+     <div class="slider-area">
+        <div class="slider">
+            <img id="slider-image" src="https://media.istockphoto.com/id/1386643491/photo/binoculars-on-top-of-rock-mountain-at-beautiful-sunset-background.webp?b=1&s=170667a&w=0&k=20&c=yZqrJfWcUr73r2_T4b4OzYdS5mT2VQik5m2-FRm_Oqo=">
+        </div>
+        <div class="icons">
+            <i id="prvbtn" class="fa-solid fa-chevron-left"></i>
+            <i id="nextbtn" class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div> 
+
+    <div class="top-menu">
+        <div data-num="1" class= "active" > some text1 </div>
+        <div data-num="2">some text2</div>
+        <div data-num="3">some text3</div>
     </div>
+    <div class="sub-menu">
+        <p data-num="1" class="show" >hello some text1</p>
+        <p data-num="2">hello some text2</p>
+        <p data-num="3">hello some text3</p>
+    </div> -->
 
-    <div class="btnButton">
-        <button onclick="PromptFunction()">Try Your Self</button>
- 
-    </div>  
-    <h1 class="btnButton" id="proText"><h1/>    
-
-
-     <h3 id="fullname"><h3/>
-        
-
-       
-
+    <div class="container">
+        <div class="box">
+            <h2>To do list</h2>
+            <input type="text" placeholder="Write here ..." id="inputBx">
+            <ul class="lists" id="list"></ul>
+        </div>
+    </div>
     
-    
-</body>
-<script src="/src/js/app.js"></script>
-<script src="/src/js/main.js"></script>
-<script src="/src/js/index.js"></script>
+</body><script src="/src/js/app.js"></script>
 </html>
